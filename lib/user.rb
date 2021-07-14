@@ -10,4 +10,12 @@ class User
     @jokes << new_joke
   end
 
+  def tell(joke_receiver, shared_joke)
+    if @jokes.include? shared_joke
+      joke_receiver.jokes << shared_joke
+    else
+      "I don't know that joke."
+    end
+  end
+
 end
