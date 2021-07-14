@@ -18,4 +18,9 @@ class User
     end
   end
 
+  def joke_by_id(id_number)
+    @jokes.find do |joke|
+      joke.id == id_number
+    end
+  end
 end

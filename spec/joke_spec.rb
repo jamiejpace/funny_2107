@@ -24,9 +24,4 @@ RSpec.describe Joke do
 
     expect(joke.punchline).to eq("Because his mother was in a jam.")
   end
-
-
-
-
-
 end
