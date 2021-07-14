@@ -23,7 +23,7 @@ RSpec.describe User do
   it 'learns jokes' do
     user_1 = User.new("Sal")
     joke_1 = Joke.new(22, "Why did the strawberry cross the road?", "Because his mother was in a jam.")
-    Joke.new(13, "How do you keep a lion from charging?", "Take away its credit cards.")
+    joke_2 = Joke.new(13, "How do you keep a lion from charging?", "Take away its credit cards.")
     user_1.learn(joke_1)
 
     expect(user_1.jokes.length).to eq(1)
